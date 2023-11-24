@@ -32,3 +32,8 @@ store.subscribe(renderContador);
 // Por último, utilizamos los botones de nuestro HTML para que cada vez que hagamos click,
 // hagan un dispatch al store de la acción correspondiente:
 
+document.querySelector("#incremento").addEventListener("click", () => {
+  store.dispatch(incremento());
+}
+);
+
