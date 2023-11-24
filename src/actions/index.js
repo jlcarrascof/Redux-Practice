@@ -7,6 +7,8 @@ const { INCREMENTO, DECREMENTO } = require('../action-types');
 
 // * incremento y decremento son action creators (funciones que devuelven un objeto de acción).
 // * INCREMENTO y DECREMENTO son action types (constantes que indican el tipo de acción que se está realizando).
+// * Las action creators devuelven un objeto de acción que tiene una propiedad de tipo.
+// * El reducer recibe el objeto de acción y devuelve un nuevo estado.
 
 const incremento = () => { 
 
