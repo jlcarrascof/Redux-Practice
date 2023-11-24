@@ -47,4 +47,9 @@ document.querySelector("#incrementoImpar").addEventListener("click", () => {
 }
 );
 
-
+document.querySelector("#incrementoAsync").addEventListener("click", () => {
+  setTimeout(() => {
+    store.dispatch(incremento());
+  }, 2000);
+}
+);
