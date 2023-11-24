@@ -42,4 +42,9 @@ document.querySelector("#decremento").addEventListener("click", () => {
 }
 );
 
+document.querySelector("#incrementoImpar").addEventListener("click", () => {
+  store.getState().contador % 2 !== 0 && store.dispatch(incremento());
+}
+);
+
 
