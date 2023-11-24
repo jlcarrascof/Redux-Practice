@@ -37,3 +37,9 @@ document.querySelector("#incremento").addEventListener("click", () => {
 }
 );
 
+document.querySelector("#decremento").addEventListener("click", () => {
+  store.dispatch(decremento());
+}
+);
+
+
