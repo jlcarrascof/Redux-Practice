@@ -38,7 +38,11 @@ document.querySelector("#incremento").addEventListener("click", () => {
 );
 
 document.querySelector("#decremento").addEventListener("click", () => {
-  store.dispatch(decremento());
+  if (store.getState().contador <= 0) {
+    alert("No se aceptan numeros negativos");
+  } else {
+    store.dispatch(decremento());
+  } 
 }
 );
 
