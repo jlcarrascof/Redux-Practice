@@ -4,10 +4,11 @@ const { incremento, decremento } = require("./actions");
 
 // En esta línea creamos nuestro store. Pasándole como parámetro nuestro Reducer
 const store = createStore(contador);
-console.log(store);
+// console.log(store);
 
 // Obtenemos el elemento con el id `valor`.
-var valor;
+var valor = document.getElementById("valor");
+console.log(valor);
 
 // Esta función nos va a servir para actualizar nuestro DOM con el valor que tengamos en nuestro Store.
 // En el primer render y cada vez que nos subscribamos al Store.
